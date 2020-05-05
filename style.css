@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-image: url(ksh.jpg);
   background-position-x: center;
+  background-size: cover;
 }
 nav {
   height: 80px;
