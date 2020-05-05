@@ -11,6 +11,18 @@ body {
   background-position-x: center;
   background-size: cover;
 }
+.about-section {
+  position: static;
+  padding: 250px;
+  text-align: left;
+  font-size: 20px;
+  background-color: #696969;
+  color: white;
+}
+h1 {
+  text-decoration: underline overline;
+  text-color: #FFFAF0;
+}
 nav {
   height: 80px;
   background-image: linear-gradient(to left, purple, rgb(53, 53, 117));
