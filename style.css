@@ -1,58 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
   padding: 0;
   margin: 0;
-	list-style: none;
+  list-style: none;
   text-decoration: none;
 }
-body{
-  
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(ksh.jpg);
+  background-position-x: center;
 }
-nav{
+nav {
   height: 80px;
-	background: #2c3e50;
+  background: #2c3e50;
 }
-nav img{
-	position: absolute;
-	width: 150px;
-	top: 17px;
-	left: 12%;
+nav img {
+  position: absolute;
+  width: 150px;
+  top: 17px;
+  left: 2%;
 }
-nav ul{
+nav ul {
   float: right;
   margin-right: 25px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 15px;
 }
-nav ul li a{
+nav ul li a {
   position: relative;
   padding: 5px 0;
   color: white;
   font-size: 18px;
   text-transform: uppercase;
 }
-nav ul li a:before{
+nav ul li a:before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   width: 100%;
   height: 3px;
-	background: white;
+  background: white;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
-nav ul li a:hover:before{
+nav ul li a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
 }
 label #btn,
-label #cancel{
+label #cancel {
   font-size: 30px;
   color: white;
   float: right;
@@ -61,29 +62,29 @@ label #cancel{
   cursor: pointer;
   display: none;
 }
-#check{
+#check {
   display: none;
 }
-@media (max-width: 1118px){
-  nav img{
+@media (max-width: 1118px) {
+  nav img {
     left: 8%;
   }
 }
-@media (max-width: 944px){
-  nav img{
+@media (max-width: 944px) {
+  nav img {
     width: 130px;
-		top: 20px;
-		left: 6%;
+    top: 20px;
+    left: 6%;
   }
-	nav ul li a{
-		font-size: 17px;
-	}
+  nav ul li a {
+    font-size: 17px;
+  }
 }
-@media (max-width: 860px){
-  label #btn{
+@media (max-width: 860px) {
+  label #btn {
     display: block;
   }
-  ul{
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -91,23 +92,23 @@ label #cancel{
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 20px;
   }
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
-	#check:checked ~ label #btn{
+  #check:checked ~ label #btn {
     display: none;
   }
-	#check:checked ~ label #cancel{
+  #check:checked ~ label #cancel {
     display: block;
   }
 }
