@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #141614;
-        }
-        
-        li {
-          float: right;
-          border-right: 1px solid #bbbbbb
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: #111;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <ul>
-          <li style="float:left"><a class="active" href="#sgsits">SGSITS</a></li>
-          <li><a class="active" href="#contact">Contact</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#updates">Updates</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#home">Home</a></li>
-        
-        </ul>
-    
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="prernakaprosty.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+
+      <ul>
+        <li style="float: left;"><img src="kshitij.jpg" /></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Updates</a></li>
+        <li >
+           
+                <a href="#">Gallery</a>
+           
+                <ul>
+                    <li><a href="#">Posters</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Photos</a></li>
+                </ul>
+            </li>
+        </li>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
