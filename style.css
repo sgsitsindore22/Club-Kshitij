@@ -9,12 +9,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.hero-image{
-  background-image: url("ksh.jpg");
+.hero-image {
+  background-image: url(images/ksh.jpg);
   height: 900px;
   background-position-x: center;
   background-size: cover;
-  
 }
 
 .about-section {
@@ -27,19 +26,18 @@ body {
 }
 h1 {
   text-decoration: underline overline;
-  text-color: #FFFAF0;
+  text-color: #fffaf0;
 }
 div.polaroid {
   width: 20%;
   background-color: white;
   margin: 70px;
   float: left;
-  display: inline; 
-  padding: 25px; 
+  display: inline;
+  padding: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
-
 div.container {
   text-align: center;
   padding: 10px 20px;
@@ -99,51 +97,3 @@ label #cancel {
 #check {
   display: none;
 }
-@media (max-width: 1118px) {
-  nav img {
-    left: 8%;
-  }
-}
-@media (max-width: 944px) {
-  nav img {
-    width: 130px;
-    top: 20px;
-    left: 6%;
-  }
-  nav ul li a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 860px) {
-  label #btn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #34495e;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  #check:checked ~ label #btn {
-    display: none;
-  }
-  #check:checked ~ label #cancel {
-    display: block;
-  }
-}
-
