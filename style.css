@@ -15,7 +15,7 @@ body {
   background-position-x: center;
   background-size: cover;
 }
-
+/*about section*/
 .about-section {
   position: static;
   padding: 250px;
@@ -24,27 +24,15 @@ body {
   background-color: #696969;
   color: white;
 }
-h1 {
+/*about section ends*/
+h1.about-heading {
   text-decoration: underline overline;
   text-color: #fffaf0;
 }
-div.polaroid {
-  width: 20%;
-  background-color: white;
-  margin: 70px;
-  float: left;
-  display: inline;
-  padding: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
+/*navigation bar begins*/
 nav {
   height: 80px;
-  background-image: linear-gradient(to left, purple, rgb(53, 53, 117));
+  background-image: linear-gradient(to left, dimgray, rgb(0, 5, 0));
 }
 nav img {
   position: absolute;
@@ -84,16 +72,129 @@ nav ul li a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
 }
-label #btn,
-label #cancel {
-  font-size: 30px;
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  line-height: 40px !important;
+  padding: 20px;
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li {
+  width: 100px;
+  float: none;
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: list-item;
+  padding: 10px;
+  position: relative;
+  line-height: 20px !important;
+  background-color: dim gray;
+}
+/*navigation bar ends*/
+/*footer begins*/
+.footer {
+  background-image: linear-gradient(to right, black, rgb(33, 29, 56), black);
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
+  height: 400px;
+  position: relative;
 }
-#check {
-  display: none;
+.footer .footer-content {
+  border: 1px soldi darkblue;
+  height: 350px;
+  display: flex;
 }
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+  padding-left: 15px;
+}
+.footer .footer-content .about h1 span {
+  color: cyan;
+}
+.footer .footer-content .about .social a {
+  border: 1px solid grey;
+  color: grey;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.footer .footer-content .about .social a:hover {
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s;
+}
+.footer .footer-content .about .contact .span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+  border: 1px solid black;
+}
+.footer .footer-content .links ul a {
+  display: block;
+  padding-left: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+.footer .footer-content .links ul a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.footer .footer-bottom {
+  background-image: linear-gradient(to right, gray, black, grey);
+  color: white;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+}
+.footer .footer-content .contact-form .contact-input {
+  background: rgb(35, 32, 32);
+  width: fit-content;
+  color: wheat;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: 0.9rem 1.4rem;
+  border: none;
+}
+.footer .footer-content .contact-form .contact-input:focus {
+  background-color: black;
+  width: fit-content;
+}
+.footer .footer-content .contact-form .contact-btn {
+  float: rightf;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background: rgb(90, 113, 133);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: rgb(48, 48, 90);
+  transition: all 0.3s;
+}
+.btn-big {
+  padding: 0.7rem 1.2rem;
+  line-height: 1.3rem;
+}
+/*footer ends*/
