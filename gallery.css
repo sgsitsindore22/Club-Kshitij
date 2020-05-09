@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/*stlylis gallery begins*/
 * {
   padding: 0;
   margin: 0;
-  font-family: Arial;
+  font-family: "Open Sans", sans-serif;
 }
 
 .ulis {
@@ -92,3 +94,4 @@
 .ulis .liis:hover {
   width: 750px;
 }
+/*stlylis gallery ends*/
