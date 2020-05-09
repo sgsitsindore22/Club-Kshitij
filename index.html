@@ -5,8 +5,23 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="gallery.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--nav bar begins-->
@@ -78,7 +93,7 @@
     </div>
     <!--gallery code ends-->
     <div class="about-section">
-      <h1><u>About Us</u></h1>
+      <h1 class="about-heading"><u>About Us</u></h1>
       <br />
       <br />
       <br />
@@ -99,47 +114,75 @@
         ever growing to achieve the zenith of perfection.
       </p>
     </div>
-    <!--polaroid images code begins-->
-    <div class="polaroid">
-      <img src="images/dry.jpg" alt="5 Terre" style="width: 100%;" />
-      <div class="container">
-        <p>Cinque Terre</p>
-      </div>
-    </div>
 
-    <div class="polaroid">
-      <img src="images/green.jpg" alt="Northern Lights" style="width: 100%;" />
-      <div class="container">
-        <p>Northern Lights</p>
+    <!--footer begins-->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="about-heading">
+            Club <span class="logotext">Khsitij</span>
+          </h1>
+          <p>
+            The club conducted recruitment drives for different departments
+            encompassing dance, drama and music. It received an overwhelming
+            response from the enthusiastic students. A team of responsible and
+            dedicated students was thus formed and the club is ever evolving and
+            ever growing to achieve the zenith of perfection.
+          </p>
+          <div class="contact-details">
+            <span><i class="fa fa-phone">&nbsp; 123-456-7089</i></span>
+            <br />
+            <span
+              ><i class="fa fa-envelope">&nbsp; emailofclub@faltu.com</i></span
+            >
+            <br />
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <br />
+          <ul>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Events</li></a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Contackt us</h2>
+          <br />
+          <form action="" method="post">
+            <input
+              type="email"
+              name="email"
+              class="text-input contact-input"
+              placeholder="your email address..."
+            />
+            <br />
+            <textarea
+              name="message"
+              class="text-input contact-input"
+              placeholder="your message...."
+            ></textarea>
+            <br />
+            <button type="submit" class="btn btn-big contact-btn">
+              <i class="fa fa-envelope" aria-hidden="true"></i> Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; ClubKsitij | made with ❤ by PrernaAthia
       </div>
     </div>
-
-    <div class="polaroid">
-      <img src="images/dry.jpg" alt="5 Terre" style="width: 100%;" />
-      <div class="container">
-        <p>Cinque Terre</p>
-      </div>
-    </div>
-
-    <div class="polaroid">
-      <img src="images/green.jpg" alt="Northern Lights" style="width: 100%;" />
-      <div class="container">
-        <p>Northern Lights</p>
-      </div>
-    </div>
-
-    <div class="polaroid">
-      <img src="images/dry.jpg" alt="5 Terre" style="width: 100%;" />
-      <div class="container">
-        <p>Cinque Terre</p>
-      </div>
-    </div>
-
-    <div class="polaroid">
-      <img src="images/green.jpg" alt="Northern Lights" style="width: 100%;" />
-      <div class="container">
-        <p>Northern Lights</p>
-      </div>
-    </div>
+    <!--footer ends-->
   </body>
 </html>
